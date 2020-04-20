@@ -45,8 +45,7 @@ var Card = /*#__PURE__*/function (_React$Component) {
   _createClass(Card, [{
     key: "render",
     value: function render() {
-      /*#__PURE__*/
-      _react["default"].createElement("div", null, "Today's date is ".concat(Date()));
+      return /*#__PURE__*/_react["default"].createElement("div", null, "Today's date is ".concat(Date()));
     }
   }]);
 

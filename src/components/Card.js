@@ -7,7 +7,7 @@ class Card extends React.Component {
    }
 
   render () {
-    <div>{`Today's date is ${Date()}`}</div>;
+      return <div>{`Today's date is ${Date()}`}</div>;  
   }
 }
 
