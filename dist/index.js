@@ -85,16 +85,12 @@ var Slider = /*#__PURE__*/function (_React$Component) {
           goalAchievement: cards[key].goal_achievement,
           cardColor: cards[key].card_color
         });
-      })); // <div>
-      //     <div>{this.props.passedStr}</div>
-      //     <Card text="abc"/>
-      // </div>
+      }));
     }
   }]);
 
   return Slider;
 }(_react["default"].Component);
 
-var _default = Slider; // export { default as Card } from './components/Card';
-
+var _default = Slider;
 exports["default"] = _default;

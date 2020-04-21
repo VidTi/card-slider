@@ -1,9 +1,6 @@
 import React from 'react';
-// import { Card } from './index';
 import Slider from './index';
 
-export default { title: 'Card' };
+export default { title: 'Slider' };
 
-export const sliderWithText = () => <Slider passedStr="sliderText"></Slider>
-
-// export const withText = () => <Card text="hello" />;
+export const sliderWithText = () => <Slider/>

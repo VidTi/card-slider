@@ -36,15 +36,9 @@ class Slider extends React.Component {
                                                        cardColor={cards[key].card_color}
                                                        />
                                                  )}
-           </div> 
-    // <div>
-    //     <div>{this.props.passedStr}</div>
-    //     <Card text="abc"/>
-    // </div>
+                </div> 
   }
 }
 
 export default Slider;
-
-// export { default as Card } from './components/Card';
 

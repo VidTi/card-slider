@@ -11,17 +11,13 @@ var _index = _interopRequireDefault(require("./index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-// import { Card } from './index';
 var _default = {
-  title: 'Card'
+  title: 'Slider'
 };
 exports["default"] = _default;
 
 var sliderWithText = function sliderWithText() {
-  return /*#__PURE__*/_react["default"].createElement(_index["default"], {
-    passedStr: "sliderText"
-  });
-}; // export const withText = () => <Card text="hello" />;
-
+  return /*#__PURE__*/_react["default"].createElement(_index["default"], null);
+};
 
 exports.sliderWithText = sliderWithText;

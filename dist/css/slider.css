@@ -4,6 +4,7 @@
   overflow-x: scroll;
   white-space: nowrap;
   max-width: 680px;
+  text-align: center;
 }
 
 .cardContainer::-webkit-scrollbar {
