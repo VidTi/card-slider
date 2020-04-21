@@ -7,6 +7,8 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+require("../css/card.css");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -45,7 +47,28 @@ var Card = /*#__PURE__*/function (_React$Component) {
   _createClass(Card, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement("div", null, "Today's date is ".concat(Date()));
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        className: "card",
+        style: {
+          backgroundColor: this.props.cardColor
+        }
+      }, /*#__PURE__*/_react["default"].createElement("div", {
+        className: "tag"
+      }, /*#__PURE__*/_react["default"].createElement("p", null, this.props.cardTag)), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "offerLabel"
+      }, this.props.offerLabel), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "offerDesc"
+      }, this.props.offerDesc), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "tnc"
+      }, this.props.tnc), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "conditionLimit"
+      }, this.props.conditionLimit), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "campaignEndDate"
+      }, this.props.campaignEndDate), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "progressBar"
+      }), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "goalAchievement"
+      }, this.props.goalAchievement));
     }
   }]);
 
