@@ -1,0 +1,15 @@
+.cardContainer {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+  max-width: 680px;
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.cardContainer {
+  -ms-overflow-style: none;
+}
