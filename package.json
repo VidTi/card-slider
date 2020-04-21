@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel ./src --out-dir ./dist"
+    "build": "babel ./src --out-dir ./dist",
+    "storybook": "start-storybook"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,16 @@
     "url": "https://github.com/VidTi/card-slider/issues"
   },
   "homepage": "https://github.com/VidTi/card-slider#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
     "react": "^16.13.1"
   }
 }
