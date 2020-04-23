@@ -50,10 +50,13 @@ var Card = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/_react["default"].createElement("div", {
         className: "card",
         style: {
-          backgroundColor: this.props.cardColor
+          background: this.props.cardColor
         }
       }, /*#__PURE__*/_react["default"].createElement("div", {
-        className: "tag"
+        className: "tag",
+        style: {
+          background: this.props.cardTagColor
+        }
       }, /*#__PURE__*/_react["default"].createElement("p", null, this.props.cardTag)), /*#__PURE__*/_react["default"].createElement("div", {
         className: "offerLabel"
       }, this.props.offerLabel), /*#__PURE__*/_react["default"].createElement("div", {
@@ -66,7 +69,13 @@ var Card = /*#__PURE__*/function (_React$Component) {
         className: "campaignEndDate"
       }, this.props.campaignEndDate), /*#__PURE__*/_react["default"].createElement("div", {
         className: "progressBar"
-      }), /*#__PURE__*/_react["default"].createElement("div", {
+      }, /*#__PURE__*/_react["default"].createElement("div", {
+        className: "progress",
+        style: {
+          width: this.props.progress,
+          background: this.props.progressBarColor
+        }
+      })), /*#__PURE__*/_react["default"].createElement("div", {
         className: "goalAchievement"
       }, this.props.goalAchievement));
     }

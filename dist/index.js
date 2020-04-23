@@ -83,7 +83,10 @@ var Slider = /*#__PURE__*/function (_React$Component) {
           conditionLimit: cards[key].cond_limit,
           campaignEndDate: cards[key].campaign_end_date,
           goalAchievement: cards[key].goal_achievement,
-          cardColor: cards[key].card_color
+          cardColor: cards[key].card_bg,
+          cardTagColor: cards[key].card_tag_bg,
+          progressBarColor: cards[key].progress_bar_bg,
+          progress: cards[key].progress
         });
       }));
     }

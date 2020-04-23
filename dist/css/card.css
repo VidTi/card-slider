@@ -9,7 +9,7 @@
 
 .tag {
     height: 20px;
-    width: 260px;
+    width: 230px;
     margin-left:0px;
     margin-top: 7px;
     background-color: blue;
@@ -79,10 +79,14 @@
 }
 
 .progressBar {
-    width: 215px;
+    width: 233px;
     height: 4px;
     margin-top:8px;
-    border: solid red 1px;
+    background-color: #fff;
+}
+
+.progress {
+    height:100%;
 }
 
 .goalAchievement {
