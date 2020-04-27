@@ -77,7 +77,9 @@ var Card = /*#__PURE__*/function (_React$Component) {
         }
       })), /*#__PURE__*/_react["default"].createElement("div", {
         className: "goalAchievement"
-      }, this.props.goalAchievement));
+      }, this.props.goalAchievement), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "cta"
+      }, "Show products"));
     }
   }]);
 

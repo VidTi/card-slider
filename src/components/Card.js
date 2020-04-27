@@ -22,6 +22,7 @@ class Card extends React.Component {
                     <div className="progress" style={{width:this.props.progress,background:this.props.progressBarColor}}></div>
                 </div>
                 <div className="goalAchievement">{this.props.goalAchievement}</div>
+                <div className="cta">Show products</div>
            </div>
   }
 }

@@ -2,16 +2,17 @@
     border-radius: 16px;
     display: inline-block;
     box-sizing: border-box;
-    padding: 13px 20px 10px 30px;
+    padding: 20px 30px 20px 30px;
     margin-left: 13px;
     background-color: aqua;
+    position: relative;
 }
 
 .tag {
     height: 20px;
     width: 230px;
     margin-left:0px;
-    margin-top: 7px;
+    margin-top: 10px;
     background-color: blue;
     color: #fff;
     font-style: normal;
@@ -32,7 +33,7 @@
     font-style: normal;
     font-weight: bold;
     line-height: 21px;
-    margin-top: 49px;
+    margin-top: 27px;
     text-transform: capitalize;
     color: #000000;
 }
@@ -43,12 +44,11 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
-    color: #4A4A4A;
+    color: #6B6E7B;
     margin-top: 10px;
 }
 
 .tnc {
-    font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
     font-size: 9px;
@@ -92,10 +92,26 @@
 .goalAchievement {
     font-family: Proxima Nova;
     font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
+    font-weight: 600;
+    font-size: 10px;
     line-height: 14px;
     margin-top:9px;
     color: #000000;
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
+}
+
+.cta {
+    margin-top: 22px;
+    width: 120px;
+    height: 24px;
+    border-radius: 64px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    background-color: #fff;
+    text-align: center;
+    float: right;
+    color: #E95F62;
 }

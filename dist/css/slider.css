@@ -1,4 +1,5 @@
 .cardContainer {
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
   margin: 0 auto;
   overflow-x: scroll;
