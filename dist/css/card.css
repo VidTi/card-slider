@@ -6,6 +6,8 @@
     margin-left: 13px;
     background-color: aqua;
     position: relative;
+    height: 300px;
+    width: 300px;
 }
 
 .tag {
@@ -17,8 +19,8 @@
     color: #fff;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     color: #FFFFFF;
     border-radius: 0px 35px 35px 0px;
 }
@@ -29,51 +31,50 @@
 }
 
 .offerLabel {
-    font-size: 17px;
+    font-size: 1.063rem;
     font-style: normal;
     font-weight: bold;
-    line-height: 21px;
+    line-height: 1.313rem;
     margin-top: 27px;
     text-transform: capitalize;
     color: #000000;
 }
 
 .offerDesc { 
-    font-family: Proxima Nova;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 0.813rem;
+    line-height: 1rem;
     color: #6B6E7B;
     margin-top: 10px;
+    white-space: normal;
+    height: 2rem;
 }
 
 .tnc {
     font-style: normal;
     font-weight: 600;
-    font-size: 9px;
-    line-height: 18px;
+    font-size: 0.563rem;
+    line-height: 1.125rem;
     color: #8F8F8F;
     margin-top: 2px;
 }
 
 
 .conditionLimit {
-    font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
     margin-top: 10px;
     color: #4A4A4A;
 }
 
 .campaignEndDate{
-    font-family: Proxima Nova;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
     margin-top: 2px;
     color: #8F8F8F;
 }
@@ -90,14 +91,12 @@
 }
 
 .goalAchievement {
-    font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
     margin-top:9px;
     color: #000000;
-    /* margin-bottom: 6px; */
 }
 
 .cta {
@@ -105,11 +104,10 @@
     width: 120px;
     height: 24px;
     border-radius: 64px;
-    font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
     background-color: #fff;
     text-align: center;
     float: right;
