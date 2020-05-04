@@ -1,6 +1,6 @@
 import React from 'react';
-import Slider from './index';
+import App from './index';
 
 export default { title: 'Slider' };
 
-export const sliderWithText = () => <Slider/>
+export const sliderWithText = () => <App/>

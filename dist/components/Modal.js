@@ -7,7 +7,13 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Modal = _interopRequireDefault(require("./components/Modal"));
+var _Slider = _interopRequireDefault(require("./Slider"));
+
+require("../css/Modal.css");
+
+var _Offer = _interopRequireDefault(require("../assets/icons/Offer.svg"));
+
+var _Close = _interopRequireDefault(require("../assets/icons/Close.svg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -33,61 +39,62 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var Modal = /*#__PURE__*/function (_React$Component) {
+  _inherits(Modal, _React$Component);
 
-var App = /*#__PURE__*/function (_React$Component) {
-  _inherits(App, _React$Component);
+  var _super = _createSuper(Modal);
 
-  var _super = _createSuper(App);
-
-  function App(props) {
+  function Modal(props) {
     var _this;
 
-    _classCallCheck(this, App);
+    _classCallCheck(this, Modal);
 
     _this = _super.call(this, props);
-
-    _defineProperty(_assertThisInitialized(_this), "handleClick", function () {
-      _this.setState({
-        modalOpen: true
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "closeModal", function () {
-      _this.setState({
-        modalOpen: false
-      });
-    });
-
     _this.state = {
-      modalOpen: false,
-      variant: "bottom"
+      cards: {}
     };
     return _this;
   }
 
-  _createClass(App, [{
+  _createClass(Modal, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch("http://demo9772522.mockable.io/").then(function (resp) {
+        resp.json().then(function (data) {
+          console.log(data);
+
+          _this2.setState({
+            cards: data.cards
+          });
+        });
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("button", {
-        style: {
-          background: "aqua",
-          borderRadius: "5px",
-          padding: "5px",
-          margin: "20px auto",
-          display: "block"
-        },
-        onClick: this.handleClick
-      }, "Click for cards!"), this.state.modalOpen && /*#__PURE__*/_react["default"].createElement(_Modal["default"], {
-        isOpen: this.state.modalOpen,
-        variant: this.state.variant,
-        closeModal: this.closeModal
-      }));
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        className: "modal"
+      }, this.props.variant === "bottom" && /*#__PURE__*/_react["default"].createElement("div", {
+        className: "bottomVariantBg"
+      }, /*#__PURE__*/_react["default"].createElement("div", {
+        className: "bottomVariantHeading"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        className: "offerIcon",
+        src: _Offer["default"]
+      }), "More Offers", /*#__PURE__*/_react["default"].createElement("img", {
+        className: "closeIcon",
+        src: _Close["default"],
+        onClick: this.props.closeModal
+      })), /*#__PURE__*/_react["default"].createElement(_Slider["default"], {
+        cards: this.state.cards
+      })));
     }
   }]);
 
-  return App;
+  return Modal;
 }(_react["default"].Component);
 
-var _default = App;
+var _default = Modal;
 exports["default"] = _default;

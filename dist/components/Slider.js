@@ -7,7 +7,9 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Modal = _interopRequireDefault(require("./components/Modal"));
+var _Card = _interopRequireDefault(require("./Card"));
+
+require("../css/slider.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -33,61 +35,48 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var Slider = /*#__PURE__*/function (_React$Component) {
+  _inherits(Slider, _React$Component);
 
-var App = /*#__PURE__*/function (_React$Component) {
-  _inherits(App, _React$Component);
+  var _super = _createSuper(Slider);
 
-  var _super = _createSuper(App);
-
-  function App(props) {
+  function Slider(props) {
     var _this;
 
-    _classCallCheck(this, App);
+    _classCallCheck(this, Slider);
 
     _this = _super.call(this, props);
-
-    _defineProperty(_assertThisInitialized(_this), "handleClick", function () {
-      _this.setState({
-        modalOpen: true
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "closeModal", function () {
-      _this.setState({
-        modalOpen: false
-      });
-    });
-
-    _this.state = {
-      modalOpen: false,
-      variant: "bottom"
-    };
+    _this.state = {};
     return _this;
   }
 
-  _createClass(App, [{
+  _createClass(Slider, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("button", {
-        style: {
-          background: "aqua",
-          borderRadius: "5px",
-          padding: "5px",
-          margin: "20px auto",
-          display: "block"
-        },
-        onClick: this.handleClick
-      }, "Click for cards!"), this.state.modalOpen && /*#__PURE__*/_react["default"].createElement(_Modal["default"], {
-        isOpen: this.state.modalOpen,
-        variant: this.state.variant,
-        closeModal: this.closeModal
+      var cards = this.props.cards;
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        className: "cardContainer"
+      }, Object.keys(cards).map(function (key) {
+        return /*#__PURE__*/_react["default"].createElement(_Card["default"], {
+          key: key,
+          cardTag: cards[key].card_tag,
+          offerLabel: cards[key].offer_label,
+          offerDesc: cards[key].offer_desc,
+          tnc: cards[key].tnc,
+          conditionLimit: cards[key].cond_limit,
+          campaignEndDate: cards[key].campaign_end_date,
+          goalAchievement: cards[key].goal_achievement,
+          cardColor: cards[key].card_bg,
+          cardTagColor: cards[key].card_tag_bg,
+          progressBarColor: cards[key].progress_bar_bg,
+          progress: cards[key].progress
+        });
       }));
     }
   }]);
 
-  return App;
+  return Slider;
 }(_react["default"].Component);
 
-var _default = App;
+var _default = Slider;
 exports["default"] = _default;
